@@ -1,12 +1,12 @@
 <?php
 /* 
-Template Name: Community
+Template Name: Gallery
 */
 ?>
 
 <?php get_header(); ?>
 
-<div class="panel news-archive single community">
+<div class="panel single gallery">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <h1 class="heading"><?php the_title(); ?></h1>
@@ -17,19 +17,17 @@ Template Name: Community
     $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
-        'category_name' => 'community',
+        'category_name' => 'gallery',
     );
     $arr_posts = new WP_Query($args);
     ?>
 
-    <ol>
+    <ol class="gallery-entries">
         <?php if ($arr_posts->have_posts()): while ($arr_posts->have_posts()): $arr_posts->the_post(); ?>
             <li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('j M Y'); ?></time>
-                <article>
-                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                    <?php the_excerpt(); ?>
-                </article>
+                <a href="<?php the_permalink(); ?>">
+                    <?php the_content(); ?>
+                </a>
             </li>
         <?php endwhile; endif; ?>
     </ol>

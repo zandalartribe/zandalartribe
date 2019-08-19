@@ -63,7 +63,7 @@ ul, ol, li {
 }
 
 .single.panel {
-    padding-top: 48px;
+    padding: 48px;
     min-height: 360px;
 }
 
@@ -299,6 +299,24 @@ ul, ol, li {
 
 .news-archive .category-horde a {
     color: #850a10;
+}
+
+/* Gallery */
+.gallery-entries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -24px 48px;
+}
+
+.gallery-entries li {
+    margin: 0 24px 48px;
+    max-width: 30%;
+}
+
+.gallery-entries img {
+    width: 100%;
+    max-width: 100%;
 }
 
 /* Footer */

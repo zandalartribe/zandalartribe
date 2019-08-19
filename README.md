@@ -12,3 +12,7 @@ git commit -m "Version 1.3"
 git tag v1.3
 git push --follow-tags
 ```
+
+## Dependencies
+
+* [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker/) by @YahnisElsts
