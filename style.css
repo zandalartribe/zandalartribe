@@ -4,7 +4,7 @@
  Description:  Zandalar Tribe Theme
  Author: Buck Mulligan
  Created: 2019-08-17
- Version: 1.3
+ Version: 1.4
  License: GNU General Public License v2 or later
 */
 
@@ -236,7 +236,7 @@ ul, ol, li {
 }
 
 /* Community links */
-.community-links {
+.community-links ul {
     display: flex;
     justify-content: space-between;
     margin: 0 -24px 48px;
@@ -328,4 +328,32 @@ ul, ol, li {
 /* Plugin CSS overrides */
 #tribe-events-pg-template, .tribe-events-pg-template {
     max-width: 1280px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px)  {
+
+    .classic, .story {
+        display: none;
+    }
+
+    .news, .progression, .community-links ul {
+        display: block;
+        margin: 0;
+    }
+
+    .news .panel, .progression .panel {
+        margin: 0 16px 24px;
+    }
+
+    .community-links h1 {
+        text-align: center;
+        background: #bababa;
+        padding: 16px 0;
+    }
+
+    .community-links li {
+        margin: 0;
+    }
+
 }
