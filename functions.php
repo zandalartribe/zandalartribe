@@ -1,15 +1,5 @@
 <?php
 
-/*
- * Versioning management.
- */
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/zandalartribe/zandalartribe.eu/',
-	__FILE__,
-	'zandalartribe.eu'
-);
-
 /**
  * Register all stylesheets.
  */
