@@ -1,3 +1,3 @@
 <div class="panel splash">
-    <h1>Zandalar Tribe (EU RP-PVP)</h1>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/Zandalar_EU.png" />
 </div>
