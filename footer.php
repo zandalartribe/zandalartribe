@@ -1,7 +1,5 @@
-        <p class="copyright">&copy; 2019 All rights reserved by the authors. World of Warcraft and all associated logos are copyright Blizzard Entertainment.</p>
+        <p class="copyright">&copy; 2019<?php if (date('Y') > 2019) { echo '-' . date('Y'); } ?> All rights reserved by the authors. World of Warcraft&reg; and Warcraft&reg; are trademarks or registered trademarks of Blizzard Entertainment, Inc., in the U.S. and/or other countries.</p>
         
-        <?php get_template_part('wow-logo'); ?>
-    
     </div> <!-- /wrapper -->
 
     <?php wp_footer(); ?>
