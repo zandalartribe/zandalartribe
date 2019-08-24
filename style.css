@@ -5,7 +5,7 @@
  Description:  Zandalar Tribe Theme
  Author: Buck Mulligan
  Created: 2019-08-17
- Version: 1.4.1
+ Version: 1.5.1
  License: GNU General Public License v2 or later
 */
 
@@ -33,6 +33,11 @@ body {
 h1, h2, h3 {
     font-family: "Bitter", serif;
     margin: 0 0 16px;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 32px;
 }
 
 h2 {
@@ -74,6 +79,10 @@ ul, ol, li {
 .content {
     flex-grow: 2;
     max-width: 60em;
+}
+
+.gallery .content {
+    max-width: 100%;
 }
 
 .adverts {
@@ -164,22 +173,33 @@ ul, ol, li {
     border-top: 2px solid #333;
 }
 
-.navigation a {
+.navigation li {
     float: left;
-    display: block;
-    padding: 16px 32px;
+    padding: 8px 16px;
+}
+
+.navigation a {
     color: #333;
+    display: block;
+    padding: 8px 16px;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 .navigation a:hover {
     background: #c16d1f;
+    transition: all 0.2s ease-in-out;
     color: #fff;
 }
 
 .searchform {
     float: right;
+    font-size: 14px;
     padding: 16px 16px 0 0;
+}
+
+.searchform input {
+    padding: 2px 4px;
 }
 
 .searchform label {
@@ -346,17 +366,18 @@ ul, ol, li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     margin: 0 -24px 48px;
 }
 
 .gallery-entries li {
     margin: 0 24px 48px;
-    max-width: 30%;
-}
+    flex-grow: 1;
+    flex-basis: 0;
+ }
 
-.gallery-entries img {
-    width: 100%;
-    max-width: 100%;
+.gallery-entries figure {
+    max-width: 300px;
 }
 
 /* Advert sidebar */
@@ -374,14 +395,22 @@ ul, ol, li {
 
 /* Plugin CSS overrides */
 #tribe-events-pg-template, .tribe-events-pg-template {
-    max-width: 1280px;
+    max-width: 1260px;
 }
 
 /* Mobile styles */
 @media (max-width: 779px)  {
 
+    html, body {
+        overflow-y: auto !important;
+    }
+
     .wrapper {
         min-width: auto;
+    }
+
+    .splash {
+        margin-bottom: 24px;
     }
 
     .news, .progression, .community-links ul {
@@ -389,18 +418,41 @@ ul, ol, li {
         margin: 0;
     }
 
-    .news .panel, .progression .panel {
+    .news .panel, .progression .panel, .panel.single {
         margin: 0 16px 24px;
     }
 
+    .community-links,
+    .copyright {
+        background: #19150d;
+        color: #fcf7b9;
+        padding: 16px;
+        margin: 0;
+    }
+
     .community-links h1 {
-        text-align: center;
-        background: #bababa;
         padding: 16px 0;
+        text-align: center;
     }
 
     .community-links li {
+        margin: 0 0 16px;
+    }
+
+    .adverts {
+        display: none;
+    }
+
+    .news-archive time {
+        position: static;
+    }
+
+    .news-archive article {
         margin: 0;
+    }
+
+    .gallery-entries {
+        display: block;
     }
 
 }
