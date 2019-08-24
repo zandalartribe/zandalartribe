@@ -4,11 +4,14 @@
 
     <?php wp_footer(); ?>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146404656-1"></script>
     <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-146404656-1', 'www.zandalartribe.eu');
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
 
 </body>
 
