@@ -56,6 +56,10 @@ p {
     margin: 0 0 16px;
 }
 
+a {
+    color: #c16d1f;
+}
+
 ul, ol, li {
     list-style: none;
     margin: 0;
@@ -321,7 +325,6 @@ ul, ol, li {
     text-decoration: none;
     display: block;
     background: #fff;
-    border-radius: 50px;
     overflow: hidden;
     line-height: 64px;
 }
@@ -396,6 +399,10 @@ ul, ol, li {
 /* Plugin CSS overrides */
 #tribe-events-pg-template, .tribe-events-pg-template {
     max-width: 1260px;
+}
+
+#tribe-events-content .tribe-events-calendar div[id*=tribe-events-event-] h3.tribe-events-month-event-title {
+    font-size: 14px;
 }
 
 /* Mobile styles */
