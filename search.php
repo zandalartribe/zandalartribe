@@ -20,7 +20,7 @@
                 <?php endwhile; ?>
             </ul>
             <div class="pagination">
-                <?php pagination(); ?>
+                <?php the_posts_pagination(); ?>
             </div>
         <?php else: ?>
             <p>Sorry, we couldn't find any results for: "<?php echo get_search_query(); ?>"</p>
