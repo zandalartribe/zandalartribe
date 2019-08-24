@@ -6,4 +6,5 @@
             )
         );
     ?>
+    <?php get_search_form(); ?>
 </nav>

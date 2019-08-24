@@ -177,6 +177,19 @@ ul, ol, li {
     color: #fff;
 }
 
+.searchform {
+    float: right;
+    padding: 16px 16px 0 0;
+}
+
+.searchform label {
+    display: none;
+}
+
+.searchform button {
+    display: none;
+}
+
 /* Flexbox settings */
 .news,
 .progression {
