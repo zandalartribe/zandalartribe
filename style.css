@@ -216,14 +216,16 @@ ul, ol, li {
 
 /* Flexbox settings */
 .news,
-.progression {
+.progression,
+.latest-community-posts {
     display: flex;
     justify-content: space-between;
     margin: 0 -24px 48px;
 }
 
 .news .panel,
-.progression .panel {
+.progression .panel,
+.latest-community-posts .panel {
    margin: 0 24px;
    flex-grow: 1;
    flex-basis: 0;
@@ -246,16 +248,19 @@ ul, ol, li {
     margin: 0 0 24px;
 }
 
-.news a {
+.news a,
+.latest-community-posts a {
     color: #333;
     text-decoration: none;
 }
 
-.news .read-more {
+.news .read-more,
+.latest-community-posts .read-more {
     visibility: hidden;
 }
 
-.news a:hover .read-more {
+.news a:hover .read-more,
+.latest-community-posts a:hover .read-more {
     visibility: visible;
 }
 
@@ -263,7 +268,8 @@ ul, ol, li {
     color: #374a8f;
 }
 
-.news .neutral a:hover {
+.news .neutral a:hover,
+.latest-community-posts a:hover {
     color: #c16d1f;
 }
 
@@ -271,9 +277,22 @@ ul, ol, li {
     color: #850a10;
 }
 
-.news time {
+.news time,
+.latest-community-posts time {
     text-transform: uppercase;
     font-size: 12px;
+}
+
+.latest-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -16px;
+}
+
+.latest-gallery a {
+   flex-grow: 1;
+   flex-basis: 0;
+   margin: 0 16px;
 }
 
 /* The Story So Far */
