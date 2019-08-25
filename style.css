@@ -5,7 +5,7 @@
  Description:  Zandalar Tribe Theme
  Author: Buck Mulligan
  Created: 2019-08-17
- Version: 1.6.1
+ Version: 1.6.2
  License: GNU General Public License v2 or later
 */
 
@@ -85,6 +85,10 @@ ul, ol, li {
     max-width: 60em;
 }
 
+.content ul, .content ol {
+    margin-bottom: 16px;
+}
+
 .gallery .content {
     max-width: 100%;
 }
@@ -132,7 +136,7 @@ ul, ol, li {
     content: '';
 }
 
-.panel h2 {
+.home .panel h2 {
     padding-left: 16px;
     margin-bottom: 16px;
 }
