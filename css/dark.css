@@ -1,0 +1,42 @@
+/* Dark theme overrides */
+
+body {
+    background: #38444c;
+    color: #f0f2f3;
+}
+
+a, .navigation a {
+    color: #c16d1f;
+}
+
+.panel {
+    background-color: #293238;
+}
+
+.panel::before, 
+.panel::after {
+    background: #38444c;
+}
+
+.panel .heading::before {
+    background-image: url(../images/corner-dark.png);
+}
+
+.news .alliance a:hover,
+.news-archive .category-alliance a {
+    color: #5e6da7;
+}
+
+.news .horde a:hover,
+.news-archive .category-horde a {
+    color: #9f3a3d;
+}
+
+.news a,
+.latest-community-posts a {
+    color: #f0f2f3;
+}
+
+.copyright {
+    color: #f0f2f3;
+}

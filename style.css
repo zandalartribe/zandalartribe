@@ -1,11 +1,11 @@
 /*
  Theme Name: ZandalarTribe.eu
- Theme URI:    http://zandalartribe.eu/
+ Theme URI: http://zandalartribe.eu/
  GitHub Theme URI: https://github.com/zandalartribe/zandalartribe
  Description:  Zandalar Tribe Theme
  Author: Buck Mulligan
  Created: 2019-08-17
- Version: 1.6.2
+ Version: 2.0.0
  License: GNU General Public License v2 or later
 */
 
@@ -87,6 +87,14 @@ ul, ol, li {
 
 .content ul, .content ol {
     margin-bottom: 16px;
+}
+
+.content ul li {
+    list-style: disc;
+}
+
+.content ol li {
+    list-style: decimal;
 }
 
 .gallery .content {
@@ -299,31 +307,6 @@ ul, ol, li {
    margin: 0 16px;
 }
 
-/* The Story So Far */
-.story {
-    background: url(images/login.jpg) no-repeat 0 0;
-    background-size: cover;
-    margin: 0 0 48px;
-    overflow: hidden;
-}
-
-.story .so-far {
-    transform: skew(-21deg);
-    background: rgba(0, 0, 0, 0.79);
-    padding: 64px 60% 64px 128px;
-    color: #fff;
-    font-size: 18px;
-    line-height: 24px;
-    font-family: "Bitter", serif;
-    font-weight: 400;
-    margin-left: 50%;
-    width: 100%;
-}
-
-.so-far h1, .so-far p {
-    transform: skew(21deg);
-}
-
 /* Community links */
 .community-links ul {
     display: flex;
@@ -417,6 +400,11 @@ ul, ol, li {
     font-size: 12px;
     text-align: center;
     color: #696969;
+}
+
+.theme-switcher {
+    font-size: 12px;
+    text-align: center;
 }
 
 /* Plugin CSS overrides */

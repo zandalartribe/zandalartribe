@@ -9,6 +9,10 @@ function load_styles()
     wp_enqueue_style('normalize');
     wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
     wp_enqueue_style('style');
+    if ($_COOKIE['theme'] == 'dark') {
+        wp_register_style('dark', get_template_directory_uri() . '/css/dark.css', array('style'), false, 'all');
+        wp_enqueue_style('dark');
+    }
 }
 
 // Execute the function to load all styles.
